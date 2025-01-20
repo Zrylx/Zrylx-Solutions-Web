@@ -1,0 +1,107 @@
+/* --HOME PAGE-- */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.zrylx{
+    color: #E7404C;
+}
+
+.h-content {
+    max-width: 540px;
+    text-align: left;
+}
+
+.h-content h1{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.h-content h3{
+    font-size: 16px;
+    margin-top: 1rem;
+    font-weight: 500
+}
+
+.h-content p{
+    font-size: 14px;
+    margin-top: 1rem;
+    font-weight: 300;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.actions-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.linktr-icon{
+    fill: rgba(255, 255, 255, 0.575);
+    transition: 0.3s ease;
+}
+
+.s-icons a:hover .linktr-icon {
+    fill: #E7404C;
+    filter: drop-shadow(0 0 1px #E7404C)
+            drop-shadow(0 0 5px #E7404C)
+            drop-shadow(0 0 15px #E7404C);
+}
+
+.s-icons{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.s-icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+
+    font-size: large;
+    color: rgba(255, 255, 255, 0.575);
+    transition: 0.3s ease;
+}
+
+.s-icons a:hover{
+    color: #E7404C;
+    text-shadow: 0 0 5px #E7404C,
+    0 0 15px #E7404C,
+    0 0 30px #E7404C,
+    0 0 60px #E7404C;
+}
+
+/* for mobile */
+@media only screen and (max-width: 634px)
+{
+    .s-icons a{
+        width: 3rem;
+    }
+
+    .h-content h1{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}

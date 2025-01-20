@@ -1,0 +1,126 @@
+
+h1{
+    font-size: large;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.softwares{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-top: 120px;
+    padding-bottom: 0px;
+}
+
+.s-content{
+    display: flex;
+    justify-content: center;
+}
+
+.software-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 750px;
+    min-height: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px;
+    border-radius: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    padding: 35px;
+    margin-bottom: 50px;
+}
+
+.soft-img{
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.soft-content{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 1;
+    max-width: 346px;
+}
+
+
+.prim-btn{
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.075);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.prim-btn-disabled{
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.075);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    color: #969696;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(12px);
+    transition: 0.3s ease;
+}
+
+.prim-btn:hover{
+    background: rgba(255, 255, 255, 0.171);
+}
+
+.prim-btn:active{
+    background: rgba(255, 255, 255, 0.11);
+}
+
+@media (max-width: 850px)
+{
+    .s-content{
+        max-width: 350px;
+    }
+
+    .software-card{
+        flex-direction: column;
+        width: auto;
+    }
+
+    .soft-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .soft-content{
+        padding-left: 0px;
+        padding-top: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .prim-btn{
+        width: 100%;
+    }
+
+    .prim-btn-disabled{
+        width: 100%;
+    }
+}
