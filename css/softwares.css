@@ -1,3 +1,7 @@
+body {
+    min-height: 100vh;
+    overflow-y: auto;
+}
 
 h1{
     font-size: large;
@@ -34,7 +38,8 @@ p{
     border-radius: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0,0,0,0.5);
     padding: 35px;
@@ -59,6 +64,8 @@ p{
 
 
 .prim-btn{
+    appearance: none;
+    -webkit-appearance: none;
     border: none;
     border-radius: 10px;
     height: 35px;
@@ -68,6 +75,7 @@ p{
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -82,6 +90,7 @@ p{
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     transition: 0.3s ease;
 }
 
